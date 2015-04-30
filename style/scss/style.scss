@@ -1,0 +1,160 @@
+@import "configure";
+@import "elements";
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: $color_grey5;
+}
+
+.container {
+	max-width: 600px;
+	margin: 0px auto;
+	border: solid 1px $color_grey5;
+	margin-bottom: 30px;
+	position: relative;
+	&.bg-shadow {
+		background-color: $color_white;
+		box-shadow: 2px 2px 7px -1px $color_grey2;
+	}
+	iframe {
+		box-shadow: 2px 2px 7px -1px $color_grey2;
+	}
+	h2 {
+		margin: 0px;
+		padding: 20px;
+		border-bottom: solid 1px $color_grey5;
+	}
+	h3 {
+		padding: 20px;
+		text-align: center;
+	}
+	.row {
+		width: 100%;
+		@include clearfix;
+		.part {
+			.wrapper {
+				padding: 20px;
+			}
+			width: 50%;
+			float: left;
+			ul {
+				padding-left: 20px;
+			}
+		}
+		.part1 {
+			width: calc(50% - 1px);
+			border-right: solid 1px $color_grey5;
+		}
+		.part2 {
+			
+		}
+
+		.googleplay {
+			background-image: url($baseUrl + "images/google_play.png");
+			display: block;
+			padding: 0px;
+			margin: 10px 5px;
+			width: 200px;
+			height: 59px;
+		}
+		.appstore {
+			background-image: url($baseUrl + "images/app_store.png");
+			display: block;
+			padding: 0px;
+			margin: 10px 5px;
+			width: 200px;
+			height: 59px;
+		}
+	}
+
+	&.head {
+		min-height: 200px;
+	}
+	.logo {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		height: 100%;
+		width: inherit;
+		img {
+			height: 100%;
+		}
+	}
+	header {
+		font-family: "Efra Light", "Roboto", serif;
+		b {
+			font-family: "Efra Medium", "Roboto", serif;
+			font-weight: normal;
+		}
+		h1, h2 {
+			text-align: left;
+			font-size: xx-large;
+			font-weight: normal;
+			color: #444;
+			padding-top: 0px;
+		}
+		h1 {
+			padding: 20px;
+			margin-bottom: 0px;
+			font-size: 3.5em;
+			padding-bottom: 0px;
+			margin-top: 15px;
+		}
+		img {
+			margin-top: 40px;
+			max-width: 50%;
+		}
+		.info {
+			margin-top: -10px;
+			color: #666;
+			padding: 0px 20px 20px 20px;
+		}
+	}
+}
+
+
+@media (max-width: 520px) {
+
+	.container {
+		margin: 0px 10px;
+		margin-bottom: 10px;
+		.row {
+			.part, .part1, .part2 {
+				width: 100%;
+				float: none;
+				border: none;
+			}
+			.part2 {
+				border-top: solid 1px #eee;
+			}
+		}
+
+	}
+}
+
+@media (max-width: 500px) {
+	.container {
+		header {
+			img {
+				max-width: 100%;
+				display: table;
+				margin: 20px auto;
+			}
+			h1, h2 {
+				text-align: center;
+			}
+		}
+		.logo {
+			width: 200px;
+			height: inherit;
+			position: inherit;
+			display: table;
+			margin: 0px auto;
+			img {
+				width: 100%;
+				height: inherit;
+			}
+		}
+	}
+}

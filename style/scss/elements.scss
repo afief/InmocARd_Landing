@@ -1,0 +1,43 @@
+h2 {
+	font-family: "Efra", "Roboto", serif;
+	text-align: center;
+	color: $color_grey;
+}
+h3, h4, h5 {
+	margin: 0px;
+	color: $color_grey;
+	font-family: "Efra", "Roboto", serif;
+	padding: 0px;
+}
+div {
+	font-family: "Efra", "Roboto", serif;
+}
+form {
+	input {
+		width: 90%;
+		width: calc(100% - 20px);
+		padding: 10px;
+		border: solid 1px $color_primary2;
+		margin: 5px 0px;
+		outline: none;
+		box-shadow: 1px 1px 3px -1px $color_grey;
+		font-family: "Efra", "Roboto", serif;
+	}
+	button {
+		font-family: "Efra", "Roboto", serif;
+		padding: 10px 15px;
+		border: solid 1px $color_primary3;
+		background-color: $color_primary2;
+		box-shadow: 1px 1px 3px -1px $color_grey;
+		color: $color_white;
+		margin: 5px 0px;
+		cursor: pointer;
+		&:hover {
+			background-color: $color_primary1;
+			color: $color_black;
+		}
+	}
+}
+img {
+	max-width: 100%;
+}

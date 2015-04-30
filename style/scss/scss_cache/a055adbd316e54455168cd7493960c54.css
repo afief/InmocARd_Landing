@@ -1,0 +1,178 @@
+/* compiled by scssphp v0.0.9 on Thu, 30 Apr 2015 13:59:04 +0200 (0.0361s) */
+
+@font-face {
+  font-family: "Comic Neue";
+  src: url("../../fonts/ComicNeue-Angular-Regular.woff"); }
+
+@font-face {
+  font-family: "Efra";
+  src: url("../../fonts/Effra_Std_Rg.ttf"); }
+
+@font-face {
+  font-family: "Efra Light";
+  src: url("../../fonts/Effra Light.ttf"); }
+
+@font-face {
+  font-family: "Efra Medium";
+  src: url("../../fonts/Effra Medium.ttf"); }
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/Roboto-Light.ttf"); }
+
+h2 {
+  font-family: "Efra", "Roboto", serif;
+  text-align: center;
+  color: #333; }
+
+h3, h4, h5 {
+  margin: 0px;
+  color: #333;
+  font-family: "Efra", "Roboto", serif;
+  padding: 0px; }
+
+div {
+  font-family: "Efra", "Roboto", serif; }
+
+form input {
+  width: 90%;
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: solid 1px #3f51b5;
+  margin: 5px 0px;
+  outline: none;
+  box-shadow: 1px 1px 3px -1px #333;
+  font-family: "Efra", "Roboto", serif; }
+  form button {
+    font-family: "Efra", "Roboto", serif;
+    padding: 10px 15px;
+    border: solid 1px #303f9f;
+    background-color: #3f51b5;
+    box-shadow: 1px 1px 3px -1px #333;
+    color: #fff;
+    margin: 5px 0px;
+    cursor: pointer; }
+    form button:hover {
+      background-color: #c5cae9;
+      color: #000; }
+
+img {
+  max-width: 100%; }
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #eee; }
+
+.container {
+  max-width: 600px;
+  margin: 0px auto;
+  border: solid 1px #eee;
+  margin-bottom: 30px;
+  position: relative; }
+  .container.bg-shadow {
+    background-color: #fff;
+    box-shadow: 2px 2px 7px -1px #666; }
+  .container iframe {
+    box-shadow: 2px 2px 7px -1px #666; }
+  .container h2 {
+    margin: 0px;
+    padding: 20px;
+    border-bottom: solid 1px #eee; }
+  .container h3 {
+    padding: 20px;
+    text-align: center; }
+  .container .row {
+    width: 100%; }
+    .container .row:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .container .row .part {
+      width: 50%;
+      float: left; }
+      .container .row .part .wrapper {
+        padding: 20px; }
+      .container .row .part ul {
+        padding-left: 20px; }
+    .container .row .part1 {
+      width: calc(50% - 1px);
+      border-right: solid 1px #eee; }
+    .container .row .googleplay {
+      background-image: url("../../images/google_play.png");
+      display: block;
+      padding: 0px;
+      margin: 10px 5px;
+      width: 200px;
+      height: 59px; }
+    .container .row .appstore {
+      background-image: url("../../images/app_store.png");
+      display: block;
+      padding: 0px;
+      margin: 10px 5px;
+      width: 200px;
+      height: 59px; }
+  .container.head {
+    min-height: 200px; }
+  .container .logo {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: inherit; }
+    .container .logo img {
+      height: 100%; }
+  .container header {
+    font-family: "Efra Light", "Roboto", serif; }
+    .container header b {
+      font-family: "Efra Medium", "Roboto", serif;
+      font-weight: normal; }
+    .container header h1, .container header h2 {
+      text-align: left;
+      font-size: xx-large;
+      font-weight: normal;
+      color: #444;
+      padding-top: 0px; }
+    .container header h1 {
+      padding: 20px;
+      margin-bottom: 0px;
+      font-size: 3.5em;
+      padding-bottom: 0px;
+      margin-top: 15px; }
+    .container header img {
+      margin-top: 40px;
+      max-width: 50%; }
+    .container header .info {
+      margin-top: -10px;
+      color: #666;
+      padding: 0px 20px 20px 20px; }
+
+@media (max-width: 520px) {
+  .container {
+    margin: 0px 10px;
+    margin-bottom: 10px; }
+    .container .row .part, .container .row .part1, .container .row .part2 {
+      width: 100%;
+      float: none;
+      border: none; }
+      .container .row .part2 {
+        border-top: solid 1px #eee; } }
+
+@media (max-width: 500px) {
+  .container header img {
+    max-width: 100%;
+    display: table;
+    margin: 20px auto; }
+    .container header h1, .container header h2 {
+      text-align: center; }
+    .container .logo {
+      width: 200px;
+      height: inherit;
+      position: inherit;
+      display: table;
+      margin: 0px auto; }
+    .container .logo img {
+      width: 100%;
+      height: inherit; } }
